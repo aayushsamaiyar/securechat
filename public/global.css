@@ -1,11 +1,11 @@
 html, body {
-	position: relative;
+	position: absolute;
 	width: 100%;
 	height: 100%;
 }
 
 body {
-	color: #333;
+	color: rgba(51, 51, 51, 0.212);
 	margin: 0;
 	box-sizing: border-box;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -46,7 +46,8 @@ input:disabled {
 
 
 body {
-	background-color: #282c34;
+	background-image: url("backgrond.jpg");
+	background-size: cover;
   }
   
 .app {
@@ -56,7 +57,7 @@ body {
   }
   
 header {
-	background-color: #181717;
+	background-color: #5E4A9D;
 	height: 10vh;
 	min-height: 50px;
 	color: white;
@@ -248,4 +249,5 @@ header {
   .signout-button {
 	  font-size: 0.8rem;
 	  padding: 0.5rem 1rem;
+	  background-color: rgb(204, 53, 37);
   }
