@@ -46,7 +46,8 @@ input:disabled {
 
 
 body {
-	background-image: url("backgrond.jpg");
+	/* background-image: url("backgrond.jpg"); */
+	background-image: url("https://wallpapercave.com/wp/9iapSjX.png");
 	background-size: cover;
   }
   
@@ -57,7 +58,9 @@ body {
   }
   
 header {
-	background-color: #5E4A9D;
+	/* background-color: #5E4A9D; */
+	background: rgba(169, 247, 159, 0.1);
+   backdrop-filter: saturate(180%) blur(10px);
 	height: 10vh;
 	min-height: 50px;
 	color: white;
@@ -78,7 +81,8 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	min-height: 100vh;
-	background-color: rgb(40, 37, 53);
+	background: rgba(0,0,0,0.8);
+  	backdrop-filter: saturate(180%) blur(10px);
   }
   
   main {
@@ -155,7 +159,9 @@ header {
   
   .login {
 	margin: 1rem 0 0;
-	background: #1a1520;
+	/* background: #1a1520; */
+	background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: saturate(180%) blur(10px);
   }
   
   label {
