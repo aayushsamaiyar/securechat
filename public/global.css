@@ -163,6 +163,28 @@ header {
 	background: rgba(0, 0, 0, 0.1);
   backdrop-filter: saturate(180%) blur(10px);
   }
+  .login {
+	transition-duration: 0.4s;
+  }
+  
+  .login:hover {
+	background-color: #4CAF50; /* Green */
+	color: white;
+  }
+  .signup {
+	margin: 1rem 0 0;
+	/* background: #1a1520; */
+	background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: saturate(180%) blur(10px);
+  }
+  .signup {
+	transition-duration: 0.4s;
+  }
+  
+  .signup:hover {
+	background-color: #f4511e; /* Red */
+	color: white;
+  }
   
   label {
 	  color: white;
