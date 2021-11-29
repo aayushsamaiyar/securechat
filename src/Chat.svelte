@@ -30,12 +30,10 @@
 
   onMount(() => {
     var match = {
-      // lexical queries are kind of like a limited RegEx or Glob.
       '.': {
-        // property selector
-        '>': new Date(+new Date() - 1 * 1000 * 60 * 60 * 3).toISOString(), // find any indexed property larger ~3 hours ago
+        '>': new Date(+new Date() - 1 * 1000 * 60 * 60 * 3).toISOString(), 
       },
-      '-': 1, // filter in reverse
+      '-': 1, 
     };
 
     // Get Messages
@@ -48,9 +46,9 @@
 
           var message = {
             // transform the data
-            who: await db.user(data).get('alias'), // a user might lie who they are! So let the user system detect whose data it is.
-            what: (await SEA.decrypt(data.what, key)) + '', // force decrypt as text.
-            when: GUN.state.is(data, 'what'), // get the internal timestamp for the what property.
+            who: await db.user(data).get('alias'),                 // a user might lie who they are! So let the user system detect whose data it is.
+            what: (await SEA.decrypt(data.what, key)) + '',        // force decrypt as text.
+            when: GUN.state.is(data, 'what'),                      // get the internal timestamp for the what property.
           };
 
           if (message.what) {

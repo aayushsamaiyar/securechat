@@ -3,20 +3,17 @@ import 'gun/sea';
 import 'gun/axe';
 import { writable } from 'svelte/store';
 
-// Database
-export const db = GUN();
 
-// Gun User
-export const user = db.user().recall({sessionStorage: true});
+export const db = GUN(); // Database
 
-// Current User's username
-export const username = writable('');
+export const user = db.user().recall({sessionStorage: true}); // Gun User
+
+export const username = writable(''); // Current User's username
 
 user.get('alias').on(v => username.set(v))
 
 db.on('auth', async(event) => {
     const alias = await user.get('alias'); // username string
     username.set(alias);
-
     console.log(`signed in as ${alias}`);
 });
